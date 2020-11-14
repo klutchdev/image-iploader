@@ -12,7 +12,7 @@ const SubmissionForm = () => {
   const [imgUrl, setImgUrl] = useState("");
   const [progressBar, setProgressBar] = useState(0);
   const [isHidden, setIsHidden] = useState(true);
-  // if (e.target.files[0].size > 5120)
+  // if (e.target.files[0].size > 1024 * 1024 * 5)
   //   alert("File size cannot exceed more than 5MB");
 
   const handleChange = e => {
@@ -22,7 +22,8 @@ const SubmissionForm = () => {
   const handleReset = () => {
     setEmail("");
     setName("");
-    setImgUrl(null);
+    setImgUrl("");
+    setFile(null);
   };
 
   const handleImageUpload = e => {
