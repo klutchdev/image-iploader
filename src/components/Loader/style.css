@@ -1,0 +1,28 @@
+/* .src/components/Loader/style.css */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #03030365;
+}
+
+.svg {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.svg-circle-bg {
+  fill: none;
+}
+
+.svg-circle {
+  fill: none;
+}
